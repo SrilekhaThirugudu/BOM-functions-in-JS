@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      function load(){
+        //learning in-build functions 
+        //alert("Body Loaded")
+        /*const userInput=prompt("Get value from user"); 
+        console.log(userInput);*/
+        /*const userInput=confirm("Get value from user"); 
+        console.log(userInput)*/
+       /* const eles=document.getElementByClassName("myclass");
+        console.log(eles); access elements by class name. gives all elements which has same class name as array*/
+       /* const ele=document.getElementById("id1");
+        console.log(ele)*/
+      }
+      function clickfun(){
+        const ele=document.getElementById("id1");
+        ele.classList.add("mydiv2");
+        console.log(ele.classList);
+      }
+    </script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body onload="load()">
+  <div id="id1" class="myclass"></div>
+  <!--<div class="myclass"></div>
+  <div class="myclass"></div>-->
+  <button onclick="clickfun()"> change class</button>
+  <div></div>
+  </body>
+</html>
